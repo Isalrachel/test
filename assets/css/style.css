@@ -1,0 +1,192 @@
+* {
+    font-family: helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2 {
+    font-family: 'Yeon Sung', cursive;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 40px;
+    color: #b52025;
+}
+
+h2 {
+    margin-top: 100px;
+    text-align: center;
+    color: red;
+}
+
+h4{
+    font-family: 'Yeon Sung', cursive;
+    color: goldenrod;
+}
+
+p,label{
+    font-size: 20px;
+    color: white;
+}
+
+img {
+    width: 290px;
+    height: 290px;
+}
+
+body {
+    padding: 5px;
+}
+
+/*nav*/
+header {
+    position: relative;
+    flex: 0 0 auto;
+}
+
+#hd {
+    position: absolute;
+    top: 41px;
+    right: 37px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: #b52025;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #b52025;
+    color: #fff;
+}
+
+@keyframes move {
+
+    0%,25% {
+        transform: translateX(0px);
+    }
+
+    30%,55% {
+        transform: translateX(-640px);
+    }
+
+    60%,85% {
+        transform: translateX(-1280px);
+    }
+    
+    100% {
+        transform: translateX(0x);
+    }
+}
+
+.wrap {
+    width: 640px;
+    height: 426px;
+    position: relative;
+    margin: 0px auto auto;
+    border: 5px solid #f00;
+    overflow: hidden;
+}
+
+.list {
+    width: 500%;
+    animation: move 12s linear infinite;
+}
+
+.list li {
+    float: left;
+    width: 640px;
+    height: 426px;
+}
+
+.list img {
+    width: 100%;
+    height: 100%;
+}
+
+/*keep footer at the bottom*/
+html,body {
+    height: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(/assets/img/bg2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    flex: 0 0 auto;
+}
+
+/*portfolio*/
+#port{
+    padding: 40px,0px;
+    text-align: center;
+}
+
+#port h1,#port p{
+    max-width: 800px;
+    margin: auto;
+}
+
+#port img{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    border: 5px solid #000;
+}
+
+/*columns*/
+
+.con{
+    max-width: 800px;
+    margin: auto;
+}
+
+.con:after{
+    content:'';
+    display:block;
+    clear: both;
+}
+
+.col{
+    float: left;
+}
+
+.c3{
+    width: 33.333333%;
+    padding: 5px;
+}
+
+.c2{
+    margin: 40px 40px 0px 0px;
+    width: 45%;
+    height: 600px;
+}
